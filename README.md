@@ -4,3 +4,4 @@
 
 
 Test commit to check jenkins auto-build
+Test commit to trigger auto-build and auto-deployment to tomcat
