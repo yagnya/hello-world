@@ -2,8 +2,8 @@
 #Simple Ansible Playbook to build and push Docker image to Registry
  
 - name: Playbook to build and run Docker
-  hosts: dev
-  become: true
+  hosts: localhost
+  connection: local
   gather_facts: false
  
   tasks:
