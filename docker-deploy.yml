@@ -17,7 +17,7 @@
         state: present
      
     - name: Install docker-py python module
-      brew:
+      yum:
         name: python-pip
         state: present
       
