@@ -12,6 +12,7 @@
       ignore_errors: yes
       
     - name: Install pip
+    - community.general.homebrew
       brew:
         name: python3
         state: present
