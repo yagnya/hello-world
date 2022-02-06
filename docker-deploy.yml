@@ -12,8 +12,8 @@
         name: docker-py
         state: present
         
-    - name: Run Docker container using simple-docker-image
-      docker_container:
+     - name: Run Docker container using dockerhub
+       docker_container:
         name: TestApp
         image: yagnya42/testapp:b751740
         state: started
