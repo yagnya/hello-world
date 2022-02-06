@@ -19,7 +19,7 @@
     - name: Run Docker container using simple-docker-image
       docker_container:
         name: TestApp
-        image: yagnya42/testapp:${DOCKER_TAG}
+        image: yagnya42/testapp:latest
         state: started
         recreate: yes
         detach: true
