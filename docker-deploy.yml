@@ -10,6 +10,16 @@
     - name: Delete existing Docker images from the Control Node
       shell: docker rmi $(docker images -q) -f 
       ignore_errors: yes
+    
+    - name: Install python pip
+      pip:
+        name: docker-py
+        state: present
+     
+    - name: Install docker-py python module
+      brew:
+        name: python-pip
+        state: present
       
     - name: Run Docker container using simple-docker-image
       docker_container:
