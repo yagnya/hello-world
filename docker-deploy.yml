@@ -7,10 +7,6 @@
   gather_facts: false
  
   tasks:
-    - name: Delete existing Docker images from the Control Node
-      shell: docker rmi $(docker images -q) -f 
-      ignore_errors: yes
-      
     - community.general.homebrew:
         name: python3
         state: present
