@@ -12,8 +12,8 @@
       ignore_errors: yes
       
     - name: Install pip
-      yum:
-        name: python-pip
+      brew:
+        name: python3
         state: present
         
     - name: Install docker-py python module
