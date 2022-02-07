@@ -6,8 +6,8 @@
   connection: local
   gather_facts: false
    
-- name: Run Docker container using dockerhub
-  docker_container:
+  - name: Run Docker container using dockerhub
+    docker_container:
      name: TestApp
      image: yagnya42/testapp:b751740
      state: started
