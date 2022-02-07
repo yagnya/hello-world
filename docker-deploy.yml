@@ -3,6 +3,16 @@
 - hosts: localhost
   connection: local
   tasks:
+    - name: Prune everything (including non-dangling images)
+      community.docker.docker_prune:
+        containers: yes
+        images: yes
+        images_filters:
+        dangling: false
+        networks: yes
+        volumes: yes
+        builder_cache: yes
+
     - name: Run Docker container using dockerhub
       docker_container:
         name: TestApp
