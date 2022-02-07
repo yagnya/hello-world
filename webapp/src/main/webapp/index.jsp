@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Poll SCM is working</h1>
+    <h1>Ansible deployment with poll SCM</h1>
     <h1>Hurray!!!!</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
