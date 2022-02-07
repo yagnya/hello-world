@@ -6,7 +6,7 @@
     - name: Run Docker container using dockerhub
       docker_container:
         name: TestApp
-        image: yagnya42/testapp:${DOCKER_TAG}
+        image: yagnya42/testapp:dockertag
         state: started
         recreate: yes
         detach: true
