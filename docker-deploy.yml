@@ -3,11 +3,6 @@
 - hosts: localhost
   connection: local
   tasks:
-    - name: Get running containers
-      docker_host_info:
-        containers: yes
-        register: docker_info
-    
     - name: Stop running containers
       docker_container:
         name: "{{ item }}"
