@@ -3,11 +3,6 @@
 - hosts: localhost
   connection: local
   tasks:
-    - name: Remove image
-      docker_image:
-      state: absent
-      name: "yagnya42/testapp:*"
-      
     - name: Run Docker container using dockerhub
       docker_container:
         name: TestApp
